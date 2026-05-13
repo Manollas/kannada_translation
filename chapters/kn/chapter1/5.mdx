@@ -9,14 +9,14 @@
 
 ಕಾರ್ಯಗಳನ್ನು ಹೇಗೆ ಪರಿಹರಿಸಲಾಗುತ್ತದೆ ಎಂಬುದನ್ನು ವಿವರಿಸಲು, ಉಪಯುಕ್ತ ಭವಿಷ್ಯವಾಣಿಗಳನ್ನು ಔಟ್‌ಪುಟ್ ಮಾಡಲು ಮಾದರಿಯೊಳಗೆ ಏನು ನಡೆಯುತ್ತದೆ ಎಂಬುದನ್ನು ನಾವು ನೋಡೋಣ. ನಾವು ಈ ಕೆಳಗಿನ ಮಾದರಿಗಳು ಮತ್ತು ಅವುಗಳ ಅನುಗುಣವಾದ ಕಾರ್ಯಗಳನ್ನು ಒಳಗೊಳ್ಳುತ್ತೇವೆ:
 
-- [Wav2Vec2](https://huggingface.co/docs/transformers/model_doc/wav2vec2) for audio classification and automatic speech recognition (ASR)
-- [Vision Transformer (ViT)](https://huggingface.co/docs/transformers/model_doc/vit) and [ConvNeXT](https://huggingface.co/docs/transformers/model_doc/convnext) for image classification
-- [DETR](https://huggingface.co/docs/transformers/model_doc/detr) for object detection
-- [Mask2Former](https://huggingface.co/docs/transformers/model_doc/mask2former) for image segmentation
-- [GLPN](https://huggingface.co/docs/transformers/model_doc/glpn) for depth estimation
-- [BERT](https://huggingface.co/docs/transformers/model_doc/bert) for NLP tasks like text classification, token classification and question answering that use an encoder
-- [GPT2](https://huggingface.co/docs/transformers/model_doc/gpt2) for NLP tasks like text generation that use a decoder
-- [BART](https://huggingface.co/docs/transformers/model_doc/bart) for NLP tasks like summarization and translation that use an encoder-decoder
+- [Wav2Vec2](https://huggingface.co/docs/transformers/model_doc/wav2vec2) ಆಡಿಯೋ ವರ್ಗೀಕರಣ ಮತ್ತು ಸ್ವಯಂಚಾಲಿತ ಭಾಷಣ ಗುರುತಿಸುವಿಕೆ (ASR) ಗಾಗಿ.
+- [Vision Transformer (ViT)](https://huggingface.co/docs/transformers/model_doc/vit) ಮತ್ತು [ConvNeXT](https://huggingface.co/docs/transformers/model_doc/convnext) ಚಿತ್ರದ ವರ್ಗೀಕರಣಕ್ಕಾಗಿ.
+- [DETR](https://huggingface.co/docs/transformers/model_doc/detr) ವಸ್ತು ಪತ್ತೆಗಾಗಿ.
+- [Mask2Former](https://huggingface.co/docs/transformers/model_doc/mask2former) ಚಿತ್ರ ವಿಭಜನೆಗಾಗಿ.
+- [GLPN](https://huggingface.co/docs/transformers/model_doc/glpn) ಆಳದ ಅಂದಾಜುಗಾಗಿ
+- [BERT](https://huggingface.co/docs/transformers/model_doc/bert) ಪಠ್ಯ ವರ್ಗೀಕರಣ, ಟೋಕನ್ ವರ್ಗೀಕರಣ ಮತ್ತು ಎನ್‌ಕೋಡರ್ ಬಳಸುವ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸುವಂತಹ NLP ಕಾರ್ಯಗಳಿಗಾಗಿ.
+- [GPT2](https://huggingface.co/docs/transformers/model_doc/gpt2) ಡಿಕೋಡರ್ ಬಳಸುವ ಪಠ್ಯ ರಚನೆಯಂತಹ NLP ಕಾರ್ಯಗಳಿಗಾಗಿ.
+- [BART](https://huggingface.co/docs/transformers/model_doc/bart) ಎನ್‌ಕೋಡರ್-ಡಿಕೋಡರ್ ಬಳಸುವ ಸಾರಾಂಶ ಮತ್ತು ಅನುವಾದದಂತಹ NLP ಕಾರ್ಯಗಳಿಗಾಗಿ.
 
 > [!TIP]
 > ನೀವು ಮುಂದುವರಿಯುವ ಮೊದಲು, ಮೂಲ ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ವಾಸ್ತುಶಿಲ್ಪದ ಬಗ್ಗೆ ಸ್ವಲ್ಪ ಮೂಲಭೂತ ಜ್ಞಾನವನ್ನು ಹೊಂದಿರುವುದು ಒಳ್ಳೆಯದು. ಎನ್‌ಕೋಡರ್‌ಗಳು, ಡಿಕೋಡರ್‌ಗಳು ಮತ್ತು ಗಮನವು ಹೇಗೆ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ ಎಂಬುದನ್ನು ತಿಳಿದುಕೊಳ್ಳುವುದರಿಂದ ವಿಭಿನ್ನ ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ಮಾದರಿಗಳು ಹೇಗೆ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತವೆ ಎಂಬುದನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ನಿಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ ನಮ್ಮ [ಹಿಂದಿನ ವಿಭಾಗವನ್ನು](https://huggingface.co/course/chapter1/4?fw=pt) ಪರಿಶೀಲಿಸಲು ಮರೆಯದಿರಿ!

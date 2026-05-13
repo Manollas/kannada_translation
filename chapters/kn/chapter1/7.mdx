@@ -37,7 +37,7 @@
 ```py
 from transformers import pipeline
 
-ner = pipeline("ner", grouped_entities=True)
+ner = pipeline("ner", aggregation_strategy="simple")
 ner("My name is Sylvain and I work at Hugging Face in Brooklyn.")
 ```
 
@@ -53,7 +53,7 @@ ner("My name is Sylvain and I work at Hugging Face in Brooklyn.")
 		},
 		{
 			text: "ಇದು ವ್ಯಕ್ತಿಗಳು, ಸಂಸ್ಥೆಗಳು ಅಥವಾ ಸ್ಥಳಗಳನ್ನು ಪ್ರತಿನಿಧಿಸುವ ಪದಗಳನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ.",
-			explain: "ಇದಲ್ಲದೆ, <code>grouped_entities=True</code> ನೊಂದಿಗೆ, ಇದು \"ಹಗ್ಗಿಂಗ್ ಫೇಸ್\" ನಂತಹ ಒಂದೇ ಘಟಕಕ್ಕೆ ಸೇರಿದ ಪದಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸುತ್ತದೆ.",
+			explain: "ಇದಲ್ಲದೆ, <code>aggregation_strategy=\"simple\"</code> ನೊಂದಿಗೆ, ಇದು \"ಹಗ್ಗಿಂಗ್ ಫೇಸ್\" ನಂತಹ ಒಂದೇ ಘಟಕಕ್ಕೆ ಸೇರಿದ ಪದಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸುತ್ತದೆ.",
 			correct: true
 		}
 	]}
